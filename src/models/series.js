@@ -7,22 +7,22 @@ module.exports = (sequelize) => {
       defaultValue: DataTypes.UUIDV4,
       primaryKey: true
     },
-    Imagen: {
+    imagen: {
       type: DataTypes.STRING,
       allowNull: false
     },
-    Titulo: {
+    titulo: {
       type: DataTypes.STRING,
       validate: {
         notEmpty: true,
         len: [2, 100]
       }
     },
-    FechaDeCreacion: {
+    fechaDeCreacion: {
       type: DataTypes.DATE(6),
       allowNull: false
     },
-    Calificacion: {
+    calificacion: {
       type: DataTypes.ENUM('1', '2', '3', '4', '5'),
       allowNull: false
     }

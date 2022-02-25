@@ -7,7 +7,7 @@ module.exports = (sequelize) => {
       defaultValue: DataTypes.UUIDV4,
       primaryKey: true
     },
-    Nombre: {
+    nombre: {
       type: DataTypes.STRING,
       validate: {
         notEmpty: {
@@ -19,7 +19,7 @@ module.exports = (sequelize) => {
         }
       }
     },
-    Imagen: {
+    imagen: {
       type: DataTypes.STRING,
       allowNull: false
     }

@@ -7,12 +7,12 @@ module.exports = (sequelize) => {
       defaultValue: DataTypes.UUIDV4,
       primaryKey: true
     },
-    Imagen: {
+    imagen: {
       type: DataTypes.STRING,
       allowNull: false,
       comment: 'Imagen del personaje'
     },
-    Nombre: {
+    nombre: {
       type: DataTypes.STRING,
       validate: {
         notEmpty: {
@@ -24,17 +24,17 @@ module.exports = (sequelize) => {
         }
       }
     },
-    Edad: {
+    edad: {
       type: DataTypes.INTEGER,
       allowNull: false,
       comment: 'Edad del personaje'
     },
-    Peso: {
+    peso: {
       type: DataTypes.REAL,
       allowNull: false,
       comment: 'Peso del personaje'
     },
-    Historia: {
+    historia: {
       type: DataTypes.STRING,
       validate: {
         notEmpty: true,

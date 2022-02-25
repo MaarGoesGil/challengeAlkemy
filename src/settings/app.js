@@ -3,8 +3,7 @@ const path = require('path')
 const cookieParser = require('cookie-parser')
 const morgan = require('morgan')
 const indexRouter = require('../routes/index')
-const error404 = require('../middlewares/error404')
-const errorHandler = require('../middlewares/errorHandler')
+const { error404, errorHandler } = require('../middleware/errors')
 
 const app = express()
 

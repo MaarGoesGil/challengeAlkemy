@@ -28,6 +28,12 @@ module.exports = (sequelize) => {
         notEmpty: true
       }
     },
+    password: {
+      type: DataTypes.STRING,
+      validate: {
+        notEmpty: true
+      }
+    },
     isVerified: {
       type: DataTypes.BOOLEAN,
       defaultValue: false

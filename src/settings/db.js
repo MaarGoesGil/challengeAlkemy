@@ -20,6 +20,7 @@ const { Personajes, Series, Generos } = sequelize.models
 Personajes.belongsToMany(Series, { through: 'PersonajesSeries' })
 Series.belongsToMany(Personajes, { through: 'PersonajesSeries' })
 Generos.hasMany(Series)
+Series.belongsTo(Generos)
 
 module.exports = {
   ...sequelize.models,

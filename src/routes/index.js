@@ -1,9 +1,11 @@
-const express = require('express')
-const router = express.Router()
+const { Router } = require('express')
+const router = Router()
+const authUser = require('./authUser')
+const categories = require('./categories')
 
-/* GET home page. */
-router.get('/', function (req, res, next) {
-  res.render('index', { title: 'Express' })
-})
+/* Authentication Users */
+router.use('/auth', authUser)
+
+router.use('/categories', categories)
 
 module.exports = router
